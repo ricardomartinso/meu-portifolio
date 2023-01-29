@@ -19,32 +19,50 @@ export default function Home() {
         <Header />
 
         {/* Front page */}
-        <section id="hero" className="min-h-screen">
+        <section
+          id="hero"
+          className="min-h-screen flex justify-center items-center"
+        >
           <Hero />
         </section>
 
         {/* About me */}
-        <section id="about" className="min-h-screen">
+        <section
+          id="about"
+          className="min-h-screen flex justify-center items-center"
+        >
           About
         </section>
 
         {/* Experiences */}
-        <section id="experiences" className="min-h-screen">
+        <section
+          id="experiences"
+          className="min-h-screen flex justify-center items-center"
+        >
           Experiences
         </section>
 
         {/* Skills */}
-        <section id="skills" className="min-h-screen">
+        <section
+          id="skills"
+          className="min-h-screen flex justify-center items-center"
+        >
           Skills
         </section>
 
         {/* Projects */}
-        <section id="projects" className="min-h-screen">
+        <section
+          id="projects"
+          className="min-h-screen flex justify-center items-center"
+        >
           Projects
         </section>
 
         {/* Contact Me */}
-        <section id="contact" className="min-h-screen">
+        <section
+          id="contact"
+          className="min-h-screen flex justify-center items-center"
+        >
           Contact Me
         </section>
       </main>
