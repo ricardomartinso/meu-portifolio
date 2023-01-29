@@ -1,36 +1,52 @@
 import Head from "next/head";
 import { SocialMedia } from "@/components/SocialMedia";
-import { About } from "@/components/About";
+import { Hero } from "@/components/Hero";
 import { Navigation } from "@/components/Navigation";
 import { Experiences } from "@/components/Experiences";
 import { Menu } from "@/components/Menu";
+import { Header } from "@/components/Header";
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>Ricardo Martins Portfólio</title>
-        <meta name="description" content="Portfólio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main
-        className="
-      bg-main min-h-screen max-w-full 
-      px-8 text-slate-100"
-      >
-        <Navigation />
-        <div className="flex flex-col items-center ">
-          <Menu />
-          <section id="about" className="min-h-screen ">
-            <About />
-            <SocialMedia />
-          </section>
-          <section id="experiences" className="min-h-screen">
-            <Experiences />
-          </section>
-        </div>
+      <main className="bg-main min-h-screen px-8 text-slate-100 min-w-full w-full">
+        {/* Header */}
+        <Header />
+
+        {/* Front page */}
+        <section id="hero" className="min-h-screen">
+          <Hero />
+        </section>
+
+        {/* About me */}
+        <section id="about" className="min-h-screen">
+          About
+        </section>
+
+        {/* Experiences */}
+        <section id="experiences" className="min-h-screen">
+          Experiences
+        </section>
+
+        {/* Skills */}
+        <section id="skills" className="min-h-screen">
+          Skills
+        </section>
+
+        {/* Projects */}
+        <section id="projects" className="min-h-screen">
+          Projects
+        </section>
+
+        {/* Contact Me */}
+        <section id="contact" className="min-h-screen">
+          Contact Me
+        </section>
       </main>
     </>
   );
