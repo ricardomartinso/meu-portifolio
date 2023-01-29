@@ -10,68 +10,6 @@
   list-style: none;
   text-decoration: none;
 }
-:root {
-  --transition: all 400ms ease;
-}
-
-body {
-  line-height: 1.7;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: 500;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-section {
-  margin-top: 8rem;
-}
-
-section > h2,
-section > h5 {
-  text-align: center;
-  color: rgba(255, 255, 255, 0.603);
-}
-
-section > h2 {
-  color: #4db5ff;
-  margin-bottom: 3rem;
-}
-
-a {
-  color: #4db5ff;
-  transition: var(--transition);
-}
-
-a:hover {
-  color: white;
-}
-
-img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-}
-
-/* ======== MEDIA QUERY (MEDIUM DEVIDES) */
-@media screen and (max-width: 1024px) {
-  section {
-    margin-top: 6rem;
-  }
-}
-/* ======== MEDIA QUERY (SMALL DEVIDES) */
-@media screen and (max-width: 600px) {
-  section > h2 {
-    margin-top: 6rem;
-  }
-}
 
 @font-face {
   font-family: "burtons";
