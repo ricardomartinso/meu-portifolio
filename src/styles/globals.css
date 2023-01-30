@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .menuButton {
+    @apply text-white tracking-widest uppercase text-sm
+    px-6 py-2 border rounded-full border-[#242424]  mr-4 cursor-pointer
+    transition-all hover:border-primaryVariant hover:text-[#fff]/70;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

@@ -14,55 +14,40 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <main className="bg-main min-h-screen px-8 text-slate-100 min-w-full w-full">
+      <main
+        className="
+      bg-main text-white h-screen snap-y snap-mandatory overflow-scroll z-0"
+      >
         {/* Header */}
         <Header />
-
+        {/* <Menu /> */}
         {/* Front page */}
-        <section
-          id="hero"
-          className="min-h-screen flex justify-center items-center"
-        >
+        <section id="hero" className="snap-center">
           <Hero />
         </section>
 
         {/* About me */}
-        <section
-          id="about"
-          className="min-h-screen flex justify-center items-center"
-        >
+        <section id="about" className="">
           About
         </section>
 
         {/* Experiences */}
-        <section
-          id="experiences"
-          className="min-h-screen flex justify-center items-center"
-        >
+        <section id="experiences" className="">
           Experiences
         </section>
 
         {/* Skills */}
-        <section
-          id="skills"
-          className="min-h-screen flex justify-center items-center"
-        >
+        <section id="skills" className="">
           Skills
         </section>
 
         {/* Projects */}
-        <section
-          id="projects"
-          className="min-h-screen flex justify-center items-center"
-        >
+        <section id="projects" className="">
           Projects
         </section>
 
         {/* Contact Me */}
-        <section
-          id="contact"
-          className="min-h-screen flex justify-center items-center"
-        >
+        <section id="contact" className="">
           Contact Me
         </section>
       </main>

@@ -1,34 +1,59 @@
 import { Typewriter } from "react-simple-typewriter";
-import { motion } from "framer-motion";
+import Link from "next/link";
+import BackgroundCircles from "./BackgroundCircles";
+import Image from "next/image";
+import me from "../../public/eu.jpeg";
 
 export function Hero() {
   const text = [
-    "<CodeSleepEatRepeat />",
     "Ricardo Martins",
     "Desenvolvedor Web Full-Stack",
+    "<CodeSleepEatRepeat />",
   ];
 
   return (
-    <motion.div
-      className=" text-center p-10  pb-[200px]"
-      initial={{ opacity: 0.5, y: -500, scale: 0.3 }}
-      animate={{ opacity: 1, y: 0, scale: [0.6, 0.9, 1] }}
-      transition={{ duration: 2.3 }}
+    <div
+      className="
+      flex flex-col items-center justify-center h-screen
+      text-center p-10  space-y-8 overflow-hidden z-10"
     >
-      <h2 className=" text-5xl py-2 ">
-        <Typewriter
-          words={text}
-          loop={true}
-          cursor={true}
-          cursorColor={"#4db5ff"}
-          typeSpeed={120}
-        />
-      </h2>
+      <BackgroundCircles />
+      <Image
+        className="w-28 h-28 rounded-full mx-auto"
+        src={me}
+        alt="Minha foto"
+      />
+      <div className="z-10">
+        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[0.7rem]">
+          Desenvolvedor Web
+        </h2>
+        <h1 className="text-5xl py-2 lg:text-6xl font-semibold scroll-px-10">
+          <Typewriter
+            words={text}
+            loop={true}
+            cursor={true}
+            cursorColor={"#4db5ff"}
+            typeSpeed={120}
+          />
+        </h1>
+      </div>
+      <div className="flex z-10">
+        <Link href={"#about"}>
+          <button className=" menuButton">About</button>
+        </Link>
 
-      <p className=" text-md py-2 ">
-        Olá, me chamo Ricardo e este é meu portfólio, ofereço serviços com a
-        programação. Disponível para contato nos ícones abaixo.
-      </p>
-    </motion.div>
+        <Link href={"#experiences"}>
+          <button className=" menuButton">Experiences</button>
+        </Link>
+
+        <Link href={"#skils"}>
+          <button className=" menuButton">Skills</button>
+        </Link>
+
+        <Link href={"#projects"}>
+          <button className=" menuButton">Projects</button>
+        </Link>
+      </div>
+    </div>
   );
 }
