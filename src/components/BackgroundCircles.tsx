@@ -15,10 +15,10 @@ function BackgroundCircles({}: Props) {
       transition={{ duration: 2 }}
     >
       <div className=" border border-[#333] rounded-full h-[200px] w-[200px] absolute animate-ping mt-52"></div>
-      <div className=" border border-[#333] rounded-full h-[300px] w-[300px] absolute animate-ping mt-52"></div>
-      <div className=" border border-[#333] rounded-full h-[500px] w-[500px] absolute animate-ping mt-52"></div>
-      <div className=" border border-primary opacity-20 rounded-full h-[580px] w-[580px] absolute mt-52"></div>
-      <div className=" border border-primary opacity-20 rounded-full h-[720px] w-[720px] absolute mt-52"></div>
+      <div className=" border border-[#333] rounded-full h-[300px] w-[300px] absolute mt-52"></div>
+      <div className=" border border-[#333] rounded-full h-[500px] w-[500px] absolute mt-52"></div>
+      <div className=" border border-primary opacity-20 rounded-full h-[650px] w-[650px] absolute mt-52 animate-pulse"></div>
+      <div className=" border border-primary opacity-20 rounded-full h-[800px] w-[800px] absolute mt-52"></div>
     </motion.div>
   );
 }

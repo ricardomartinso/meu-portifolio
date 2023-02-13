@@ -4,8 +4,8 @@
 
 @layer components {
   .menuButton {
-    @apply text-white tracking-widest uppercase text-sm
-    px-6 py-2 border rounded-full border-[#242424]  mr-4 cursor-pointer
+    @apply text-white tracking-widest uppercase text-xs
+    px-6 py-2 mt-4 border rounded-full border-[#242424] cursor-pointer
     transition-all hover:border-primaryVariant hover:text-[#fff]/70;
   }
 }

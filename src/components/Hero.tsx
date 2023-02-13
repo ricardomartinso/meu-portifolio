@@ -27,7 +27,7 @@ export function Hero() {
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[0.7rem]">
           Desenvolvedor Web
         </h2>
-        <h1 className="text-5xl py-2 lg:text-6xl font-semibold scroll-px-10">
+        <h1 className="md:text-5xl sm:text-3xl py-2 lg:text-6xl font-semibold scroll-px-10">
           <Typewriter
             words={text}
             loop={true}
@@ -37,7 +37,7 @@ export function Hero() {
           />
         </h1>
       </div>
-      <div className="flex z-10">
+      <div className="flex items-center flex-wrap justify-center z-10">
         <Link href={"#about"}>
           <button className=" menuButton">About</button>
         </Link>

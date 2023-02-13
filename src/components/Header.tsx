@@ -21,7 +21,9 @@ export function Header({}: Props) {
           className="flex items-center gap-3 cursor-pointer"
         >
           <AiOutlineMail fontSize={"1.5rem"} />
-          <div className=" uppercase">Entre em contato</div>
+          <div className=" uppercase hidden md:inline-flex text-sm text-gray-400">
+            Entre em contato
+          </div>
         </motion.div>
       </Link>
     </header>
